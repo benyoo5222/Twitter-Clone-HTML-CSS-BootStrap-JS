@@ -1,5 +1,135 @@
-@media (max-width: 988px) {
-  .right-menu {
-    display: none;
-  }
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.left-menu {
+  flex-direction: column;
+  flex: 1 1 275px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-container {
+  margin-top: -1rem;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+ul.menu-icons {
+  margin: 0;
+}
+
+li {
+  margin-top: 1.5rem;
+}
+
+.twitter-color {
+  color: rgb(29, 161, 242);
+}
+
+.icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  font-size: 24px;
+}
+
+.menu-text {
+  padding-left: 20px;
+  font-size: 19px;
+}
+
+.twitter-container {
+  flex: 1 0 598px;
+  border-left: 1px solid rgb(230, 236, 240);
+  border-right: 1px solid rgb(230, 236, 240);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+#main-page-home-header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+}
+
+.right-menu {
+  flex: 1 1 350px;
+}
+
+.profile-pic {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.compose-profile-container {
+  display: flex;
+  padding: 15px;
+}
+
+.compose-profile {
+  width: 50px;
+  height: 50px;
+  border: solid;
+  border-radius: 50%;
+}
+
+textarea {
+  width: 90%;
+  padding: 15px 0 15px 15px;
+  font-size: 18px;
+  border: none;
+
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none;
+}
+
+.compose-buttons-icons {
+  display: flex;
+  color: rgb(29, 161, 242);
+  justify-content: space-between;
+  padding: 0 15px 15px 88px;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  align-items: flex-end;
+}
+
+.compose-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.compose-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.compose-button {
+  font-size: 18px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  color: white;
+  background-color: rgb(29, 161, 242);
 }
