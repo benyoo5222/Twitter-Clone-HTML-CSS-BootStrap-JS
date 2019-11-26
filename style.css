@@ -76,7 +76,7 @@ header {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 1px solid black;
+  object-fit: cover;
 }
 
 .compose-profile-container {
@@ -87,8 +87,8 @@ header {
 .compose-profile {
   width: 50px;
   height: 50px;
-  border: solid;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 textarea {
@@ -132,4 +132,63 @@ textarea {
   border-radius: 30px;
   color: white;
   background-color: rgb(29, 161, 242);
+}
+
+.separator {
+  height: 10px;
+  background-color: rgb(230, 236, 240);
+}
+
+.tweet-profile-content-container {
+  padding: 8px 0 0 15px;
+  width: 90%;
+}
+
+.tweet-profile-title-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.tweet-profile-info {
+  display: flex;
+}
+
+.tweet-profile-title {
+  padding-right: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.tweet-check-mark {
+  padding-right: 5px;
+}
+
+i.fas.fa-check-circle {
+  font-size: 15px;
+  color: rgb(29, 161, 242);
+}
+
+.tweet-handle {
+  color: rgb(101, 119, 134);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.tweet-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-placeholder {
+  margin: 0 15px 0 80px;
+}
+
+.tweet-photo {
+  width: 520px;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 1px solid rgb(204, 214, 221);
 }
