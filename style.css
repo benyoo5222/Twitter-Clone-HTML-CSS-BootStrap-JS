@@ -2,6 +2,34 @@ body {
   margin: 0;
 }
 
+@media (min-width: 1440px) {
+  body .container {
+    display: flex;
+    width: 0;
+    justify-content: center;
+    margin: auto;
+  }
+
+  body .left-menu {
+    flex-direction: column;
+    flex: 0 1 275px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 20px;
+  }
+
+  body .twitter-container {
+    flex: 0 1 598px;
+    border-left: 1px solid rgb(230, 236, 240);
+    border-right: 1px solid rgb(230, 236, 240);
+  }
+
+  body .right-menu {
+    display: flex;
+    flex: 0 2 350px;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1400px) {
   .container {
     display: flex;
