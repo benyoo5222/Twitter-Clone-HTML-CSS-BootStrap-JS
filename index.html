@@ -15,7 +15,7 @@
     <div class="container">
         <nav class="left-menu">
           <ul style="list-style-type:none;" class="menu-icons">
-            <li>
+            <li class="dissappear">
               <div class="hover-wrapper twitter-color logo-container">
                 <span class="logo"><i class="fab fa-twitter"></i></span>
               </div>
@@ -26,7 +26,14 @@
                 <span class="menu-text">Home</span>
               </div>
             </li>
-            <li>
+            <li class="mobile-icon">
+              <div class="hover-wrapper appear">
+                <span class="icon icon-style">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </li>
+            <li class="dissappear">
               <div class="hover-wrapper">
                 <span class="icon"><i class="fas fa-hashtag"></i></span>
                 <span class="menu-text">Explore</span>
@@ -34,35 +41,35 @@
             </li>
             <li>
               <div class="hover-wrapper">
-                <span class="icon"><i class="far fa-bell"></i></span>
+                <span class="icon icon-style"><i class="far fa-bell"></i></span>
                 <span class="menu-text">Notifications</span>
               </div>
             </li>
             <li>
               <div class="hover-wrapper">
-                <span class="icon"><i class="far fa-envelope"></i></span>
+                <span class="icon icon-style"><i class="far fa-envelope"></i></span>
                 <span class="menu-text">Messages</span>
               </div>
             </li>
-            <li>
+            <li class="dissappear">
               <div class="hover-wrapper">
                 <span class="icon"><i class="far fa-bookmark"></i></span>
                 <span class="menu-text">Bookmarks</span>
               </div>
             </li>
-            <li>
+            <li class="dissappear">
               <div class="hover-wrapper">
                 <span class="icon"><i class="far fa-list-alt"></i></span>
                 <span class="menu-text">Lists</span>
               </div>
             </li>
-            <li>
+            <li class="dissappear">
               <div class="hover-wrapper">
                 <img class="profile-pic" src="./profile.jpg"></img>
                 <span class="menu-text">Profile</span>
               </div>
             </li>
-            <li>
+            <li class="dissappear">
               <div class="hover-wrapper">
                 <span class="icon"><i class="fas fa-ellipsis-h"></i></span>
                 <span class="menu-text">More</span>
@@ -83,9 +90,14 @@
 
         <div class="twitter-container">
           <header>
-            <h1 id="main-page-home-header">
-              Home
-            </h1>
+            <span class="profile-container">
+              <span class="mobile-profile-pic">
+                <img class="profile-pic" src="./profile.jpg"></img>
+              </span>
+              <h1 id="main-page-home-header">
+                Home
+              </h1>
+            </span>
 
             <i class="far fa-star twitter-color"></i>
           </header>
@@ -256,7 +268,9 @@
 
         <aside class="right-menu">
           <div class="search">
-            <i class="fas fa-search"></i>
+            <span class="search-bar-icon">
+              <i class="fas fa-search"></i>
+            </span>
             <input class="search-bar" type="text"/>
           </div>
 
