@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1440px) {
@@ -144,6 +145,14 @@ body {
 }
 
 @media (max-width: 550px) {
+  html body {
+    width: 100%;
+  }
+
+  body .container {
+    width: auto;
+  }
+
   .container .left-menu {
     flex-direction: row;
     flex: 1 1 275px;
@@ -191,7 +200,7 @@ body {
   }
 
   .container .twitter-container {
-    width: initial;
+    width: 100%;
     flex: initial;
     border-left: 1px solid rgb(230, 236, 240);
     border-right: 1px solid rgb(230, 236, 240);
@@ -215,6 +224,18 @@ body {
 
   li.mobile-icon {
     display: block;
+  }
+
+  .container .right-menu {
+    display: none;
+  }
+
+  .tweet-post .tweet-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: initial;
+    padding: 10px 0px 10px 76px;
+    color: rgb(101, 119, 134);
   }
 }
 
